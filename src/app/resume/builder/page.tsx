@@ -1,4 +1,5 @@
-import { ResumeForm } from "@/components/resume/resume-form";
+import { ResumeForm } from "@/components/resume/form";
+import { ResumePDF } from "@/components/resume/pdf";
 
 export default function Create() {
   return (
@@ -7,7 +8,9 @@ export default function Create() {
         <div className="col-span-3">
           <ResumeForm />
         </div>
-        <div className="col-span-3">PDF</div>
+        <div className="col-span-3">
+          <ResumePDF />
+        </div>
       </div>
     </main>
   );
