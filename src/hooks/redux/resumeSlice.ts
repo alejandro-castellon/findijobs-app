@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import type { Resume, ResumeProfile } from "@/types/types";
+import type { RootState } from "@/hooks/redux/store";
 
 const initialProfile: ResumeProfile = {
   name: "",
@@ -29,5 +30,8 @@ export const resumeSlice = createSlice({
 });
 
 export const { changeProfile } = resumeSlice.actions;
+
+export const selectResume = (state: RootState) => state.resume;
+export const selectProfile = (state: RootState) => state.resume.profile;
 
 export default resumeSlice.reducer;

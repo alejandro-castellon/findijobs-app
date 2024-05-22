@@ -1,3 +1,4 @@
+"use client";
 import store from "@/hooks/redux/store";
 import { Provider } from "react-redux";
 import { ResumeForm } from "@/components/resume/form";

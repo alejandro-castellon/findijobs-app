@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import rootReducer from "./rootReducer";
+import resumeReducer from "./resumeSlice";
 
 const store = configureStore({
-  reducer: rootReducer,
+  reducer: {
+    resume: resumeReducer,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;
