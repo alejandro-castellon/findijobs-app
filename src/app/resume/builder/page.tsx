@@ -1,17 +1,23 @@
+import store from "@/hooks/redux/store";
+import { Provider } from "react-redux";
 import { ResumeForm } from "@/components/resume/form";
 import { ResumePDF } from "@/components/resume/pdf";
 
-export default function Create() {
+const Create: React.FC = () => {
   return (
-    <main className="relative h-full w-full overflow-hidden">
-      <div className="grid grid-cols-3 md:grid-cols-6 p-10">
-        <div className="col-span-3">
-          <ResumeForm />
+    <Provider store={store}>
+      <main className="relative h-full w-full overflow-hidden mt-10">
+        <div className="grid grid-cols-3 md:grid-cols-6 mt-10">
+          <div className="col-span-3">
+            <ResumeForm />
+          </div>
+          <div className="col-span-3">
+            <ResumePDF />
+          </div>
         </div>
-        <div className="col-span-3">
-          <ResumePDF />
-        </div>
-      </div>
-    </main>
+      </main>
+    </Provider>
   );
-}
+};
+
+export default Create;
