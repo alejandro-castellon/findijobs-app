@@ -2,7 +2,7 @@
 import store from "@/hooks/redux/store";
 import { Provider } from "react-redux";
 import { ResumeForm } from "@/components/resume/form";
-import { ResumePDF } from "@/components/resume/pdf";
+import { ResumePreview } from "@/components/resume/preview";
 
 const Create: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Create: React.FC = () => {
             <ResumeForm />
           </div>
           <div className="col-span-3 p-4">
-            <ResumePDF />
+            <ResumePreview />
           </div>
         </div>
       </main>
