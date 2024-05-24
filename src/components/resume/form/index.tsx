@@ -1,11 +1,14 @@
 import { EducationForm } from "./education-form";
 import { ProfileForm } from "./profile-form";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export const ResumeForm = () => {
   return (
-    <div className="scrollbar scrollbar-track-gray-100 scrollbar-w-3 md:justify-end md:overflow-y-scroll">
-      <ProfileForm />
-      <EducationForm />
-    </div>
+    <ScrollArea className="rounded-md">
+      <div className="h-[calc(100vh-4rem)]">
+        <ProfileForm />
+        <EducationForm />
+      </div>
+    </ScrollArea>
   );
 };

@@ -7,8 +7,8 @@ import { ResumePreview } from "@/components/resume/preview";
 const Create: React.FC = () => {
   return (
     <Provider store={store}>
-      <main className="relative h-full w-full overflow-hidden mt-10">
-        <div className="grid grid-cols-3 md:grid-cols-6 mt-8">
+      <main className="relative h-full w-full overflow-hidden md:mt-10">
+        <div className="grid grid-cols-3 md:grid-cols-6 md:mt-8">
           <div className="col-span-3 p-4">
             <ResumeForm />
           </div>
