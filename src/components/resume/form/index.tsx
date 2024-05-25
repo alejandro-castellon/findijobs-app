@@ -4,11 +4,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 export const ResumeForm = () => {
   return (
-    <ScrollArea className="rounded-md">
-      <div className="h-[calc(100vh-4rem)]">
-        <ProfileForm />
-        <EducationForm />
-      </div>
+    <ScrollArea className="h-[calc(100vh-4rem)] rounded-md">
+      <ProfileForm />
+      <EducationForm />
     </ScrollArea>
   );
 };

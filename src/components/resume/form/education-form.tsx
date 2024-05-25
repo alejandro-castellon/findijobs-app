@@ -20,7 +20,7 @@ export const EducationForm = () => {
 
   return (
     <div className="px-4 py-2 md:px-8 md:py-4">
-      <Card className="flex flex-col gap-3 rounded-md p-6 pt-4 shadow transition-opacity duration-200">
+      <Card className="flex flex-col gap-3 rounded-md p-6 shadow transition-opacity duration-200">
         <CardContent className="grid gap-4">
           <Label htmlFor="school">School</Label>
           <Input
